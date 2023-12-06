@@ -1,0 +1,95 @@
+.body {
+    background: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.grid {
+    width: 300px;
+    height: 300px;
+    border: 10px solid #333; 
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.grid div {
+    width: calc(30px - 2px); 
+    height: calc(30px - 2px);
+    border: 1px solid #333;
+}
+
+.snake {
+    background: #4CAF50;
+    border: 1px solid #333;
+}
+
+.apple {
+    background: #FF6347;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.popup {
+    background: url('samuel.png'); 
+    background-size: cover;
+    width: 900px; 
+    height: 750px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.playAgain {
+    margin-top: 500px; 
+    padding: 20px 40px; 
+    font-size: 24px; 
+    background: #0b0101;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+.scoreBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    font-size: 18px;
+}
+
+.scoreBox span {
+    margin-right: 10px;
+}
